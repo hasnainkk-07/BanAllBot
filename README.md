@@ -14,14 +14,6 @@ BanAll Bot is a powerful Telegram bot designed to help group administrators mana
 - **Interactive Help Menu:** Accessible via the "Help" button, displaying detailed information about all commands.
 
 
-## GitHub Profile Metrics
-
-<p align="center">
-  <strong>Total Visitors:</strong><br>
-  <img src="https://profile-counter.glitch.me/hasnainkk-07/BanAllBot/count.svg" alt="Visitor Count">
-</p>
-
-
 ## Getting Started
 
 ### Prerequisites
