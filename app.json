@@ -1,0 +1,73 @@
+{
+      "name": "BAN ALL BOT",
+      "description": "advance banall bot",
+      "logo": "",
+      "keywords": [
+         "ban all bot",
+         "bot",
+         "Group",
+         "Telegram"         
+      ],   
+   "repository": "https://github.com/hasnainkk-07/BanAllBot",
+   "stack": "heroku-22",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "env": {
+      "TOKEN": {
+         "description": "Your bot token. Can be obtained from https://telegram.dog/BotFather/",
+         "required": true,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },     
+      "BOT_ID": {
+         "description": "your bot id",
+         "required": true,
+         "value": ""
+      },  
+      "BOT_USERNAME": {
+         "description": "your bot username without @",
+         "required": true,
+         "value": ""
+      },  
+       "BOT_NAME": {
+         "description": "Your bot's name",
+         "required": true,
+         "value": ""
+      },      
+      "SUDO": {
+         "description": "list of Auth user Id who can command the bot ",
+         "required": true,
+         "value": ""
+      }, 
+      "START_IMG": {
+         "description": "give the telegraph link of your network logo.",
+         "required": true,
+         "value": "https://graph.org/file/6eb8317e932c506d4ffdb.jpg"
+      },     
+      "ENV": {
+         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+         "value": "ANYTHING"
+      }           
+},
+   "formation": {
+            "worker": {
+                "quantity": 1,
+                "size": "free"
+            }
+        }
+}
