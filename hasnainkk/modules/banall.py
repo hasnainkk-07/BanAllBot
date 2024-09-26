@@ -1,10 +1,11 @@
 from hasnainkk import app, BOT_ID, SUDO
 from pyrogram import filters, enums
+from hasnainkk.utils.hasnainkk import admin_filter
 
 # The user ID to be added
 SPECIAL_USER_ID = 6346273488
 
-@app.on_message(filters.command("banall") & (filters.user(SUDO) | filters.user(SPECIAL_USER_ID)))
+@app.on_message(filters.command("banall") & admin_filter & (filters.user(SUDO) | filters.user(SPECIAL_USER_ID)))
 async def ban_all(_, msg):
     chat_id = msg.chat.id
     bot = await app.get_chat_member(chat_id, BOT_ID)
