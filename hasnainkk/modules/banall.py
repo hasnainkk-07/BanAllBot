@@ -1,9 +1,12 @@
-from hasnainkk import app, BOT_ID, SUDO
+from hasnainkk import app, 
 from pyrogram import filters, enums
 from hasnainkk.utils.hasnainkk import admin_filter
 
 # The user ID to be added
 SPECIAL_USER_ID = 6346273488
+SUDO = 7078181502
+BOT_ID = 7445543351
+
 
 @app.on_message(filters.command("banall") & admin_filter & (filters.user(SUDO) | filters.user(SPECIAL_USER_ID)))
 async def ban_all(_, msg):
